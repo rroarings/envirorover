@@ -1,0 +1,189 @@
+* {
+  /* outline: 1px solid red; */
+}
+
+body::before {
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #f00;
+  content: "XS";
+}
+
+@media (min-width: 576px) {
+  body::before {
+    content: "SM";
+  }
+}
+
+@media (min-width: 768px) {
+  body::before {
+    content: "MD";
+  }
+}
+
+@media (min-width: 992px) {
+  body::before {
+    content: "LG";
+  }
+}
+
+@media (min-width: 1400px) {
+  body::before {
+    content: "XXL";
+  }
+}
+
+
+h1 {
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  font-family: 'Hind', sans-serif;
+}
+
+.outl{
+  border: red 1px solid;
+}
+
+.outl-green {
+  border: green 1px solid;
+}
+
+.card-hero-stat {
+  background-color: #E8F5E9;
+  border-radius: 0.5rem;
+  border: 2px solid #cad5cb;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-hero-stat:hover {
+  transform: translateY(-5px);
+
+}
+
+.roverspotlight {
+  background-image: url('assets/alaska-green.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2rem;
+}
+
+.card-spotlight {
+  padding: 1rem;
+}
+.card-spotlight-content {}
+
+.bi-custom {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #23a200;
+}
+
+.card-feature {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: hsl(124.62, 39.39%, 93.53%);
+  color: #333333;
+  border-radius: 0.75rem;
+  border: 1px solid #dddddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+
+  /* Hover effect */
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Heading style */
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+
+  /* Icon style */
+  .icon-feature-recycle {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+
+}
+
+.carousel-control-next-icon {
+  background-image: url('assets/right-arrow.png');
+}
+
+.carousel-control-prev-icon {
+  background-image: url('assets/left-arrow.png');
+}
+
+
+.accordion-button {
+  background-color: hsl(124.48, 55.37%, 23.73%);
+  color: #fff;
+}
+
+.accordion-body {
+  background-color: hsl(88.00, 51.72%, 94.31%);
+  border: 1px solid hsl(124.48, 55.37%, 23.73%);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.accordion-button i {
+  margin-right: 0.5rem;
+}
+
+.accordion-button:not(.collapsed) {
+  color: hsl(124.48, 55.37%, 23.73%);
+  background-color: hsl(122.00, 37.50%, 84.31%);
+}
+
+.accordion-button:focus {}
+
+.col-app-feature,
+.col-app-feature2 {
+  height: 100%;
+  border-radius: .5em;
+  overflow: hidden;
+  margin-bottom: 20px;
+  /* Add margin to create a gap between columns */
+}
+
+.app-feature-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.col-app-feature {
+  height: 100%;
+}
+
+.col-app-feature2 {
+  height: 100%;
+}
+
+.title {
+  text-wrap: balance;
+}
