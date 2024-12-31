@@ -30,12 +30,17 @@ body::before {
   }
 }
 
+@media (min-width: 1200px) {
+  body::before {
+    content: "XL";
+  }
+}
+
 @media (min-width: 1400px) {
   body::before {
     content: "XXL";
   }
 }
-
 
 h1 {
   font-weight: 800;
@@ -54,24 +59,19 @@ p {
   font-family: 'Hind', sans-serif;
 }
 
-.outl{
+.outl {
   border: red 1px solid;
 }
 
-.outl-green {
+.outl-g {
   border: green 1px solid;
 }
 
 .card-hero-stat {
-  background-color: #E8F5E9;
+  background-color: hsl(124.62, 39.39%, 93.53%);
   border-radius: 0.5rem;
   border: 2px solid #cad5cb;
-  transition: transform 0.3s ease-in-out;
-}
-
-.card-hero-stat:hover {
-  transform: translateY(-5px);
-
+  transition: all 0.3s ease;
 }
 
 .roverspotlight {
@@ -84,12 +84,10 @@ p {
 .card-spotlight {
   padding: 1rem;
 }
-.card-spotlight-content {}
 
 .bi-custom {
   font-size: 2.5rem;
-  margin-bottom: 1rem;
-  color: #23a200;
+  color: #216f0b;
 }
 
 .card-feature {
@@ -103,25 +101,13 @@ p {
   border: 1px solid #dddddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
-  transition: transform 0.3s ease-in-out;
+  transition: all 0.3s ease;
+}
 
-  /* Hover effect */
-  &:hover {
-    transform: translateY(-5px);
-  }
-
-  /* Heading style */
-  h4 {
-    margin-bottom: 0.5rem;
-  }
-
-  /* Icon style */
-  .icon-feature-recycle {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    color: #007bff;
-  }
-
+.icon-feature-recycle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: hsl(124.48, 55.37%, 23.73%);
 }
 
 .carousel-control-next-icon {
@@ -132,12 +118,6 @@ p {
   background-image: url('assets/left-arrow.png');
 }
 
-
-.accordion-button {
-  background-color: hsl(124.48, 55.37%, 23.73%);
-  color: #fff;
-}
-
 .accordion-body {
   background-color: hsl(88.00, 51.72%, 94.31%);
   border: 1px solid hsl(124.48, 55.37%, 23.73%);
@@ -145,45 +125,12 @@ p {
   padding: 1rem;
 }
 
-.accordion-button i {
-  margin-right: 0.5rem;
-}
-
 .accordion-button:not(.collapsed) {
-  color: hsl(124.48, 55.37%, 23.73%);
-  background-color: hsl(122.00, 37.50%, 84.31%);
+  color: hsl(0, 0%, 1%);
+  background-color: hsl(117, 25%, 82%);
 }
 
-.accordion-button:focus {}
-
-.col-app-feature,
-.col-app-feature2 {
-  height: 100%;
-  border-radius: .5em;
-  overflow: hidden;
-  margin-bottom: 20px;
-  /* Add margin to create a gap between columns */
-}
-
-.app-feature-content {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 3%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.col-app-feature {
-  height: 100%;
-}
-
-.col-app-feature2 {
-  height: 100%;
-}
-
+/* TODO add support for chrome < 114, safari ios 17.4 */
 .title {
   text-wrap: balance;
 }
