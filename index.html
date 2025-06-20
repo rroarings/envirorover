@@ -4,129 +4,122 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500&family=Montserrat:wght@600;700&display=swap" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
   <title>EnviroRover</title>
 </head>
 
 <body>
-  <!-- nav -->
-  <div class="container">
-    <header
-      class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-      <div class="col-md-3 mb-2 mb-md-0">
-        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          EnviroRover
-        </a>
-      </div>
-
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2">Features</a></li>
-        <li><a href="#" class="nav-link px-2">Pricing</a></li>
-        <li><a href="#" class="nav-link px-2">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
-      </ul>
-
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2">
-          Login
-        </button>
-        <button type="button" class="btn btn-primary">Sign-up</button>
-      </div>
-    </header>
-  </div>
-
-  <!-- hero -->
-  <section id="hero" class="container py-5">
-    <div class="row text-center">
-      <div class="col-12">
-        <h1 class="mb-3">Revolutionizing Campus Waste Management</h1>
-        <p class="lead mt-3">
-          bringing intelligence and autonomy to campus waste management
-        </p>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-success" href="/">
+        EnviroRover
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#models">Models</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faqs">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-success d-inline-flex align-items-center">Login</a>
+          <a href="#" class="btn btn-success d-inline-flex align-items-center">Sign Up</a>
+        </div>
       </div>
     </div>
-    <div class="row d-flex justify-content-center">
-      <img src="assets/alaska.jpg" class="img-fluid" alt="" />
+  </nav>
+
+  
+  
+
+  <!-- Hero Section -->
+  <section id="hero" class="mb-5">
+    <div class="container h-100 d-flex align-items-center">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1 class="display-3 fw-bold text-white mb-4">Revolutionizing Campus Waste Management</h1>
+          <p class="lead fw-normal text-light mb-5">Bringing intelligence and autonomy to create cleaner, more
+            sustainable campuses</p>
+          <div class="d-flex justify-content-center gap-3">
+            <a href="#features" class="btn btn-success btn-lg">Explore Features</a>
+            <a href="#contact" class="btn btn-outline-light btn-lg">Contact Us</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- landing stats -->
-  <section class="container py-5">
-    <div class="row row-herostats">
-      <div class="col-12 col-md-6 col-lg mb-3 mt-4 d-flex">
-        <div class="card card-hero-stat text-center w-100">
-          <div class="card-body">
-            <i class="bi bi-recycle bi-custom"></i>
-            <h4 class="card-title fs-4 mb-3">1.2 Tons Recycled</h4>
-            <p class="card-text">
-              Receive real-time updates on the location and capacity of nearby
-              robots.
-            </p>
-          </div>
-        </div>
+  <!-- Stats Section -->
+  <section class="container py-6">
+    <div class="stats-bento">
+      <!-- Main Impact Stat -->
+      <div class="stat-card text-center featured">
+        <i class="bi bi-rocket-takeoff stat-icon"></i>
+        <h3 class="h3 mb-2">85%</h3>
+        <p class="mb-0">Waste Management Efficiency Increase</p>
       </div>
-      <div class="col-12 col-md-6 col-lg mb-3 mt-4 d-flex">
-        <div class="card card-hero-stat text-center w-100">
-          <div class="card-body">
-            <i class="bi bi-people bi-custom"></i>
-            <h4 class="title fs-4 mb-3">1,200+ Active Users</h4>
-            <p class="card-text">
-              Join an evergrowing network of users that enjoy our services.
-            </p>
-          </div>
-        </div>
+
+      <!-- Secondary Stats -->
+      <div class="stat-card text-center">
+        <i class="bi bi-recycle stat-icon"></i>
+        <h3 class="h4 mb-2">1.2 Tons</h3>
+        <p class="mb-0">Waste Recycled Monthly</p>
       </div>
-      <div class="col-12 col-md-12 col-lg-6">
-        <div class="p-4">
-          <h4 class="title">Discover Our Sustainability Initiatives</h4>
-          <p class="mt-3">
-            Learn about our sustainability initiatives and the positive impact
-            you can make.
-          </p>
-          <a href="#features" class="btn btn-success">Explore Sustainability</a>
-        </div>
+
+      <div class="stat-card text-center">
+        <i class="bi bi-people stat-icon"></i>
+        <h3 class="h4 mb-2">1,200+</h3>
+        <p class="mb-0">Active Users</p>
+      </div>
+
+      <div class="stat-card text-center">
+        <i class="bi bi-lightbulb stat-icon"></i>
+        <h3 class="h4 mb-2">138.47 MWh</h3>
+        <p class="mb-0">Energy Saved Annually</p>
+      </div>
+
+      <div class="stat-card text-center">
+        <i class="bi bi-tree stat-icon"></i>
+        <h3 class="h4 mb-2">2,500+</h3>
+        <p class="mb-0">Trees Planted</p>
       </div>
     </div>
 
-    <div class="row row-herostats">
-      <div class="col-12 col-md-12 col-lg-6">
-        <div class="p-4">
-          <h4 class="title">Learn How We Made Our Eco-Efficient Robots</h4>
-          <p class="mt-3">
-            Delve into the synergy of cutting-edge robotics and environmental
-            consciousness, where efficiency meets sustainability.
-          </p>
-          <a href="#project" class="btn btn-success">Explore Our Vision</a>
+    <!-- Mission Cards -->
+    <div class="row mt-5 g-4">
+      <div class="col-md-6">
+        <div class="feature-card">
+          <h4 class="mb-3">Discover Our Sustainability Initiatives</h4>
+          <p class="mb-4">Learn about our comprehensive approach to campus sustainability and the positive impact we're
+            making together.</p>
+          <a href="#features" class="btn btn-success">Explore Sustainability</a>
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg mb-3 mt-4 d-flex">
-        <div class="card card-hero-stat text-center w-100">
-          <div class="card-body">
-            <i class="bi bi-lightbulb bi-custom"></i>
-            <h4 class="title fs-4 mb-3">138.47 Megawatt-Hours Saved</h4>
-            <p class="card-text">
-              Witness the tangible impact of our energy-efficient robots,
-              collectively saving 38.5 MWh of power annually.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 col-lg mb-3 mt-4 d-flex">
-        <div class="card card-hero-stat text-center w-100">
-          <div class="card-body">
-            <i class="bi bi-tree bi-custom"></i>
-            <h4 class="card-title fs-4 mb-3">2,500 Trees Planted</h4>
-            <p class="card-text">
-              Dive into our reforestation initiative! For every EnviroRover
-              deployed, we plant 2,500 trees annually.
-            </p>
-          </div>
+
+      <div class="col-md-6">
+        <div class="feature-card">
+          <h4 class="mb-3">Eco-Efficient Robotics</h4>
+          <p class="mb-4">Experience the perfect blend of cutting-edge robotics and environmental consciousness in our
+            innovative solutions.</p>
+          <a href="#project" class="btn btn-success">Discover Technology</a>
         </div>
       </div>
     </div>
@@ -135,8 +128,8 @@
   <!-- waste problem -->
   <div id="waste" class="container py-5">
     <div class="row mb-4">
-      <div class="col-12 col-lg-8 my-auto">
-        <h2 class="">The Waste Problem</h2>
+      <div class="col-12 col-lg my-auto">
+        <h2 class="display-4 mb-4">The Waste Problem</h2>
         <p class="">
           Traditional waste management systems fall short in efficiency and
           environmental impact. Overflowing bins, inefficient sorting, and
@@ -144,13 +137,19 @@
           today. EnviroRover is the answer to these challenges.
         </p>
       </div>
-      <div class="col-12 col-lg-4">
+      <div class="col-12 col-lg">
         <img src="assets/eco2.svg" class="img-fluid"
           alt="https://storyset.com/industry Industry illustrations by Storyset" />
       </div>
     </div>
+
+  </div>
+
+  <!-- our solution -->
+  <div class="container py-5">
     <div class="row flex-row-reverse mb-4">
-      <div class="col-12 col-lg-8 my-auto">
+      <div class="col-12 col-lg my-auto">
+        <h2 class="display-4 mb-4">Our Solutions</h2>
         <p class="">
           EnviroRover introduces a range of innovative solutions designed to
           revolutionize waste management. From advanced robotics to
@@ -159,373 +158,259 @@
           footprint.
         </p>
       </div>
-      <div class="col-12 col-lg-4">
+      <div class="col-12 col-lg">
         <img src="assets/eco1.svg" class="img-fluid"
           alt="https://storyset.com/industry Industry illustrations by Storyset" />
       </div>
     </div>
   </div>
 
-  <!-- mobile app -->
-  <div class="container py-5" id="hanging-icons">
-    <h2 class="mb-3">A Taste of Our Mobile App</h2>
-    <div class="row ">
-      <div class="col ">
-        <div
-          class="icon-square rounded-2 p-3 text-success bg-success-subtle d-inline-flex align-items-center justify-content-center mb-3">
-          <i class="bi bi-phone fs-3"></i>
-        </div>
-        <div>
-          <h3 class="text-body-emphasis">User-Friendly</h3>
-          <p>
-            Our intuitive mobile application offers a seamless interface for
-            monitoring waste levels, scheduling pickups, and contributing to a
-            sustainable campus environment.
-          </p>
-        </div>
-      </div>
-      <div class="col ">
-        <div
-          class="icon-square rounded-2 p-3 text-success bg-success-subtle d-inline-flex align-items-center justify-content-center mb-3">
-          <i class="bi bi-funnel fs-2 "></i>
-        </div>
-        <div>
-          <h3 class="text-body-emphasis">Smart Sorting</h3>
-          <p>
-            With advanced AI algorithms, our system classifies waste
-            accurately, promoting recycling efforts by automating the sorting
-            process with precision.
-          </p>
-        </div>
-      </div>
-      <div class="col ">
-        <div
-          class="icon-square rounded-2 p-3 text-success bg-success-subtle d-inline-flex align-items-center justify-content-center mb-3">
-          <i class="bi bi-graph-up fs-2 "></i>
-        </div>
-        <div>
-          <h3 class="text-body-emphasis">Campus Insights</h3>
-          <p>
-            Experience transparency with live updates on waste levels and
-            collection schedules, empowering users to make informed decisions
-            for a cleaner campus.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- waste management  -->
-  <div id="features" class="container py-5">
-    <div class="row py-5 gap-4">
-      <div class="col-12 col-xl-6 d-flex flex-column justify-content-between">
-        <div>
-          <h2 class="">Eco-Enhanced Waste Management</h2>
-          <p class="text-body-secondary">
-            Experience campus cleanliness like never before with our
-            user-friendly mobile app, providing real-time robot tracking,
-            storage capacity updates, and more.
-          </p>
-          <button class="btn btn-success ">Explore Our Values</button>
-        </div>
-
-        <div class="mt-3">
-          <p class="small">Follow us on social media</p>
-          <div class="d-flex gap-3">
-            <a href="#" class="" title="Visit EnviroRover's LinkedIn page" rel="noreferrer noopener"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-linkedin"
-              viewBox="0 0 20 20" role="img" aria-label="Visit EnviroRover's LinkedIn page">
-              <path
-                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
-            </svg>
-          </a>
-            <a href="#" class="" title="Visit EnviroRover's Instagram page" rel="noreferrer noopener"
-            aria-label="Visit EnviroRover's Instagram page">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-instagram"
-                viewBox="0 0 20 20" role="img" aria-label="Visit EnviroRover's Instagram page">
-                <path
-                  d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
-              </svg>
-            </a>
-            <a href="#" class="" title="Visit EnviroRover's Facebook page" rel="noreferrer noopener"
-            aria-label="Visit EnviroRover's Facebook page">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook"
-                viewBox="0 0 20 20" role="img" aria-label="Visit EnviroRover's Facebook page">
-                <path
-                  d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
-              </svg>
-            </a>
-            <a href="#" class="" title="Visit EnviroRover's X (Twitter) page" rel="noreferrer noopener"
-            aria-label="Visit EnviroRover's X (Twitter) page">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter-x"
-                viewBox="0 0 20 20" role="img" aria-label="Visit EnviroRover's X (Twitter) page">
-                <path
-                  d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
-              </svg></a>
-            <a href="#" class="" title="Pinterest" rel="noreferrer noopener"
-            aria-label="Visit EnviroRover's Pinterest page">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-pinterest"
-                viewBox="0 0 20 20" role="img" aria-label="Visit EnviroRover's Pinterest page">
-                <path
-                  d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0" />
-              </svg>
-            </a>
-            <a href="#" class="" title="Visit EnviroRover's YouTube page" rel="noreferrer noopener"
-            aria-label="Visit EnviroRover's YouTube page">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube"
-                viewBox="0 0 20 20" role="img" aria-label="Visit EnviroRover's YouTube page">
-                <path
-                  d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
-              </svg></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg">
-        <div class="row row-cols-1 row-cols-sm-2 g-4">
-          <div class="col-sm-12 col-lg-6 d-flex flex-column ">
-            <div class="card card-feature">
-              <div class="card-body">
-                <i class="bi bi-recycle icon-feature-recycle"></i>
-                <h4 class="card-title">Efficient</h4>
-                <p class="card-text">
-                  With our mobile app, users can receive real-time status
-                  updates on the location and capacity of nearby robots.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-lg-6 d-flex flex-column ">
-            <div class="card card-feature">
-              <div class="card-body">
-                <i class="bi bi-recycle icon-feature-recycle"></i>
-                <h4 class="card-title">Sustainable</h4>
-                <p class="card-text">
-                  Our mobile robots ensure efficient waste collection and
-                  promote recycling on campus.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-lg-6 d-flex flex-column ">
-            <div class="card card-feature">
-              <div class="card-body">
-                <i class="bi bi-recycle icon-feature-recycle"></i>
-                <h4 class="card-title">Technology</h4>
-                <p class="card-text">
-                  Smart sensors and advanced technology power our robots,
-                  making waste management smarter and greener.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-lg-6 d-flex flex-column ">
-            <div class="card card-feature">
-              <div class="card-body">
-                <i class="bi bi-recycle icon-feature-recycle"></i>
-                <h4 class="card-title">Rewards</h4>
-                <p class="card-text">
-                  Start earning EcoPoints every time you use our robots and
-                  take steps toward a more sustainable campus lifestyle.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- project -->
-  <div id="project" class="container py-5">
-    <div class="row gap-4">
-      <div class="col-12 col-lg">
-        <img src="assets/alaska-green.webp" class="h-100 img-fluid" alt="" />
+  <!-- Features Section -->
+  <section id="features" class="container py-5">
+    <div class="row align-items-center mb-5">
+      <div class="col-lg-6">
+        <h2 class="display-4 mb-4">Smart Campus Solutions</h2>
+        <p class="lead mb-4">Experience next-generation waste management with our innovative mobile app and intelligent
+          robots.</p>
+        <a href="#contact" class="btn btn-success">Get Started</a>
       </div>
       <div class="col-lg-6">
-        <h2 class="">Explore Our Project</h2>
-        <div class="row">
-          <div class="col-sm-12 col-lg-6">
-            <span class="badge text-bg-primary mb-2">Company</span>
-            <h5>Our Vision</h5>
-            <p>
-              Discover how our project pioneers sustainable innovation,
-              integrating cutting-edge technology to address environmental
-              challenges and promote eco-friendly solutions.
-            </p>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <span class="badge text-bg-success mb-2">Environment</span>
-            <h5>Community Impact</h5>
-            <p>
-              Explore the positive impact our project has on the community,
-              fostering a sense of environmental responsibility and
-              contributing to a healthier and more sustainable future.
-            </p>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <span class="badge text-bg-dark mb-2">Technology</span>
-            <h5>Robotic Efficiency</h5>
-            <p>
-              Dive into the efficiency of our robotic solutions, designed to
-              streamline processes and reduce ecological footprints,
-              demonstrating the power of technology in environmental
-              conservation.
-            </p>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <span class="badge text-bg-primary mb-2">Community</span>
-            <h5>Engagement Opportunities</h5>
-            <p>
-              Learn about the various opportunities for engagement within our
-              project, from educational initiatives to hands-on experiences,
-              empowering individuals to actively participate in the journey
-              towards a greener world.
-            </p>
-          </div>
-        </div>
+        <img src="assets/Artificial intelligence-bro.svg" alt="Smart campus illustration" class="img-fluid">
       </div>
     </div>
-  </div>
 
-  <!-- models -->
-  <div id="models" class="container py-5">
-    <h2 class="">Our Models</h2>
-    <div class="row py-3">
-      <div class="col-12 p-5 border rounded">
-        <div class="row">
-          <div class="col">
-            <img src="/assets/reginald.jpeg" class="img-fluid" alt="..." />
+    <div class="row g-4 mt-4">
+      <!-- App Features -->
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-phone-fill feature-icon"></i>
+          <h3 class="h4 mb-3">Smart Mobile App</h3>
+          <p>Monitor waste levels, schedule pickups, and track sustainability metrics in real-time through our intuitive
+            mobile interface.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-robot feature-icon"></i>
+          <h3 class="h4 mb-3">AI-Powered Sorting</h3>
+          <p>Advanced algorithms ensure precise waste classification and optimal recycling efficiency through automated
+            sorting.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-graph-up feature-icon"></i>
+          <h3 class="h4 mb-3">Real-Time Analytics</h3>
+          <p>Access comprehensive insights about waste management patterns and environmental impact through our
+            dashboard.</p>
+        </div>
+      </div>
+
+      <!-- Additional Features -->
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-geo-alt feature-icon"></i>
+          <h3 class="h4 mb-3">Smart Navigation</h3>
+          <p>Efficient route planning and obstacle avoidance ensure smooth operation across campus environments.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-lightning feature-icon"></i>
+          <h3 class="h4 mb-3">Energy Efficient</h3>
+          <p>Solar-powered operation and smart energy management for sustainable, continuous service.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-card text-center">
+          <i class="bi bi-shield-check feature-icon"></i>
+          <h3 class="h4 mb-3">Safe & Reliable</h3>
+          <p>Advanced safety features and regular maintenance ensure consistent and secure operation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="project" class="container py-5">
+    <div class="text-center mb-5">
+      <h2 class="display-4 mb-3">Explore Our Project</h2>
+      <p class="lead text-muted">Discover the different aspects of our innovative approach</p>
+    </div>
+
+    <div class="project-bento">
+      <!-- Featured Vision Card - Spans 2 rows -->
+      <div class="project-card featured">
+        <img src="assets/alaska-green.webp" class="project-image" alt="Project Vision" />
+        <div class="project-content">
+          <div class="badges-container">
+            <span class="badge text-bg-primary">Company</span>
           </div>
-          <div class="col">
-            <h3 class="">Reginald, EB11</h3>
-            <p class="">
-              Our pioneering robot model. Reginald is equipped with advanced
-              sensors and intelligent algorithms, ensuring efficient waste
-              collection on campus.
-            </p>
-            <ul class="list-group list-group-flush ">
-              <li class="list-group-item">
-                <i class="bi bi-check-lg me-1"></i> Smart waste collection
-              </li>
-              <li class="list-group-item">
-                <i class="bi bi-check-lg me-1"></i> Real-time location tracking
-              </li>
-              <li class="list-group-item">
-                <i class="bi bi-check-lg me-1"></i> Capacity monitoring
-              </li>
-            </ul>
-            <div class="container d-flex justify-content-between gap-3 p-4 border rounded mt-4">
-              <div class="d-flex col">
-                <small><i class="bi bi-cpu me-1"></i> AI Brain</small>
+          <h3 class="h4">Our Vision</h3>
+          <p>Ready to revolutionize waste management? Join us in creating a cleaner tomorrow where AI and robotics lead the way to zero-waste campuses.</p>
+        </div>
+      </div>
+
+      <!-- Community Impact - Spans 2 columns -->
+      <div class="project-card wide">
+        <div class="project-content">
+          <div class="badges-container">
+            <span class="badge text-bg-success">Environment</span>
+          </div>
+          <h3 class="h4">Community Impact</h3>
+          <p>See how we're turning campuses green! Our smart solutions have already saved 1.2 tons of waste monthly, inspiring a new generation of eco-warriors.</p>
+        </div>
+      </div>
+
+      <!-- Two equal sized cards -->
+      <div class="project-card">
+        <div class="project-content">
+          <div class="badges-container">
+            <span class="badge text-bg-dark">Technology</span>
+          </div>
+          <h3 class="h4">Robotic Efficiency</h3>
+          <p>Discover robots that think green! Our AI-powered fleet achieves 85% better efficiency while reducing carbon footprints. The future of waste management is here.</p>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-content">
+          <div class="badges-container">
+            <span class="badge text-bg-primary">Community</span>
+          </div>
+          <h3 class="h4">Engagement Opportunities</h3>
+          <p>Want to make a difference? Join our 1,200+ active users in hands-on initiatives that turn sustainable ideas into real-world impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Models Section -->
+  <section id="models" class="container py-5 ">
+    <div class="text-center mb-5">
+      <h2 class="display-4 mb-3">Meet Our Rovers</h2>
+      <p class="lead text-muted">Discover our fleet of intelligent waste management robots</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Reginald Model -->
+      <div class="col-md-12 mb-4">
+        <div class="model-card bg-white p-4 rounded-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="assets/reginald.jpeg" alt="Reginald EB11 Robot" class="img-fluid rounded-4 model-image">
+            </div>
+            <div class="col-lg-6">
+              <div class="h-100">
+                <div class="badges-container">
+                  <span class="badge bg-success">Campus Pioneer</span>
+                </div>
+                <h3 class="mb-3">Reginald EB11</h3>
+                <p class="text-muted mb-4">Our flagship model combines advanced sensors with intelligent algorithms for
+                  efficient waste management across campus environments.</p>
+
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-check2-circle text-success me-2 fs-5"></i>
+                    <span>Smart waste collection & sorting</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-check2-circle text-success me-2 fs-5"></i>
+                    <span>Real-time location tracking</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-check2-circle text-success me-2 fs-5"></i>
+                    <span>Advanced capacity monitoring</span>
+                  </div>
+                </div>
               </div>
-              <div class="d-flex col">
-                <small><i class="bi bi-rocket-takeoff me-1"></i>
-                  Twin-Turbo</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Eleanor Model -->
+      <div class="col-md-12 mb-4">
+        <div class="model-card bg-white p-4 rounded-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="assets/reginald.jpeg" alt="Eleanor ZR22 Robot" class="img-fluid rounded-4 model-image">
+            </div>
+            <div class="col-lg-6">
+              <div class="h-100">
+                <div class="badges-container">
+                  <span class="badge bg-success">High Capacity</span>
+                </div>
+                <h3 class="mb-3">Eleanor ZR22</h3>
+                <p class="text-muted mb-4">Designed for high-traffic areas, Eleanor combines speed and efficiency to
+                  handle larger waste volumes with ease.</p>
+
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-check2-circle text-success me-2 fs-5"></i>
+                    <span>High-speed collection & sorting</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-check2-circle text-success me-2 fs-5"></i>
+                    <span>Adaptive routing system</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-check2-circle text-success me-2 fs-5"></i>
+                    <span>Solar-powered operation</span>
+                  </div>
+                </div>
               </div>
-              <div class="d-flex col">
-                <small><i class="bi bi-shield me-1"></i> Carbon Alloy</small>
-              </div>
-              <div class="d-flex col">
-                <small><i class="bi bi-trash me-1"></i> Smart Sorting</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maxwell Model -->
+      <div class="col-md-12">
+        <div class="model-card bg-white p-4 rounded-4">
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="assets/reginald.jpeg" alt="Maxwell TQ7 Robot" class="img-fluid rounded-4 model-image">
+            </div>
+            <div class="col-lg-6">
+              <div class="h-100">
+                <div class="badges-container">
+                  <span class="badge bg-success">Versatile</span>
+                </div>
+                <h3 class="mb-3">Maxwell TQ7</h3>
+                <p class="text-muted mb-4">Built for precision and adaptability, Maxwell excels in campuses with unique
+                  waste management challenges.</p>
+
+                <div class="d-flex flex-column gap-3">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-check2-circle text-success me-2 fs-5"></i>
+                    <span>Modular design system</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-check2-circle text-success me-2 fs-5"></i>
+                    <span>Advanced compaction technology</span>
+                  </div>
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-check2-circle text-success me-2 fs-5"></i>
+                    <span>IoT integration capabilities</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row py-3">
-      <div class="col-12 p-5 border rounded">
-        <div class="row">
-          <div class="col">
-            <img src="/assets/reginald.jpeg" class="img-fluid" alt="..." />
-          </div>
-          <div class="col">
-            <h3 class="">Eleanor, ZR22</h3>
-            <p class="">
-              Eleanor is designed for high-traffic areas, combining speed and efficiency to handle larger waste volumes.
-            </p>
-            <ul class="list-group list-group-flush ">
-              <li class="list-group-item">
-                <i class="bi bi-check-lg me-1"></i> High-speed waste collection and sorting
-              </li>
-              <li class="list-group-item">
-                <i class="bi bi-check-lg me-1"></i> Adaptive routing to avoid congestion
-              </li>
-              <li class="list-group-item">
-                <i class="bi bi-check-lg me-1"></i> Solar-powered operation for maximum sustainability
-              </li>
-            </ul>
-            <div class="container d-flex p-4 border rounded mt-4">
-              <div class="d-flex col">
-                <small><i class="bi bi-cpu me-1"></i> AI Brain</small>
-              </div>
-              <div class="d-flex col">
-                <small><i class="bi bi-rocket-takeoff me-1"></i>
-                  Twin-Turbo</small>
-              </div>
-              <div class="d-flex col">
-                <small><i class="bi bi-shield me-1"></i> Carbon Alloy</small>
-              </div>
-              <div class="d-flex col">
-                <small><i class="bi bi-trash me-1"></i> Smart Sorting</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row py-3">
-      <div class="col-12 p-5 border rounded">
-        <div class="row">
-          <div class="col">
-            <img src="/assets/reginald.jpeg" class="img-fluid" alt="..." />
-          </div>
-          <div class="col">
-            <h3 class="">Maxwell, TQ7</h3>
-            <p class="">
-              Maxwell is built for precision and adaptability, perfect for campuses with unique waste management challenges.
-            </p>
-            <ul class="list-group list-group-flush ">
-              <li class="list-group-item">
-                <i class="bi bi-check-lg me-1"></i> Modular design for customizable functionalities
-              </li>
-              <li class="list-group-item">
-                <i class="bi bi-check-lg me-1"></i> Advanced compaction technology to maximize storage
-              </li>
-              <li class="list-group-item">
-                <i class="bi bi-check-lg me-1"></i> IoT integration for seamless connectivity with campus systems
-              </li>
-            </ul>
-            <div class="container d-flex p-4 border rounded mt-4">
-              <div class="d-flex col">
-                <small><i class="bi bi-cpu me-1"></i> AI Brain</small>
-              </div>
-              <div class="d-flex col">
-                <small><i class="bi bi-rocket-takeoff me-1"></i>
-                  Twin-Turbo</small>
-              </div>
-              <div class="d-flex col">
-                <small><i class="bi bi-shield me-1"></i> Carbon Alloy</small>
-              </div>
-              <div class="d-flex col">
-                <small><i class="bi bi-trash me-1"></i> Smart Sorting</small>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 
   <!-- faqs -->
   <div id="faqs" class="container py-5">
     <div class="">
-      <h2 class="text-center">Frequently Asked Questions</h2>
+      <h2 class="text-center display-4">Frequently Asked Questions</h2>
       <div class="accordion mt-4" id="accordionExample">
         <div class="accordion-item">
           <h2 class="accordion-header">
@@ -619,113 +504,207 @@
     </div>
   </div>
 
-  <!-- enviro spotlight -->
-  <div id="" class="container roverspotlight text-bg-success py-5">
-    <div class="row gap-3">
-      <h2 class="">Welcome to EnviroSpotlight</h2>
-      <div class=" col-sm-12 col-lg-6 card-spotlight text-bg-success border rounded">
-        <div class="card-spotlight-content">
-          <h3 class="card-spotlight-title">
-            "EnviroRover Recognized for Campus Impact"
-          </h3>
-          <p class="">
-            Exciting news! EnviroRover has been acknowledged for its positive
-            influence on Texas State University's campus sustainability
-            initiatives. Learn more about our commitment to a cleaner
-            environment.
-          </p>
-        </div>
+  <!-- News & Updates Section -->
+  <section class="spotlight-section text-white py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="display-4 mb-3 text-white">Latest Updates</h2>
+        <p class="lead text-light">Stay informed about our latest achievements and initiatives</p>
       </div>
-      <div class="col-sm-12 col-lg card-spotlight text-bg-success border rounded">
-        <div class="">
-          <h4 class=" ">"Student-led Sustainability Project Success"</h4>
-          <p class="">
-            Celebrating the success of a student-led sustainability project
-            supported by EnviroRover. Learn about the project's goals,
-            achievements, and its positive influence on campus life.
-          </p>
-        </div>
-      </div>
-      <div class="col-sm-12 col-lg card-spotlight text-bg-success border rounded">
-        <div class="">
-          <h4 class=" ">
-            "EnviroRover Goes Beyond: Community Cleanup Event"
-          </h4>
-          <p class="">
-            We're organizing a community cleanup event to make a tangible
-            impact on our surroundings. Join us in fostering environmental
-            responsibility and community engagement.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- contact -->
-  <div id="contact" class="container py-5">
-    <div class="row d-flex flex-row-reverse">
-      <div class="col-12 col-md-6">
-        <h2 class="">Contact Us</h2>
-        <p class="lead">
-          Questions, concerns, sponsorships? We would love to hear from you.
-        </p>
-        <form>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div class="spotlight-card h-100">
+            <span class="badge bg-success mb-3">Recognition</span>
+            <h3 class="h4 mb-3">Campus Impact Award</h3>
+            <p class="mb-4">EnviroRover receives recognition for transforming Texas State University's sustainability
+              practices through innovative waste management solutions.</p>
+            <a href="#" class="btn btn-outline-light">Read More</a>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-              placeholder="Your message..."></textarea>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="spotlight-card h-100">
+            <span class="badge bg-success mb-3">Student Initiative</span>
+            <h3 class="h4 mb-3">Student-Led Innovation</h3>
+            <p class="mb-4">Students develop new waste sorting algorithms, improving EnviroRover's recycling efficiency
+              by 35%. See how our technology evolves with student collaboration.</p>
+            <a href="#" class="btn btn-outline-light">Learn More</a>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
-      <div class="col-12 col-md-6">
-        <img
-          src="https://ouch-cdn2.icons8.com/YWDj2LQE6riAeAz8hWefBt0kAP2Prcm5qxcu2-lC-tg/rs:fit:368:491/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvNDUv/ZWFlNTRiNDMtMWRi/ZS00NmZkLTk1NzUt/Zjg2MTQwNGEwN2Fm/LnN2Zw.png"
-          class="img-fluid" alt="Earth illustration doing a heart sign." />
+        </div>
+
+        <div class="col-lg-4">
+          <div class="spotlight-card h-100">
+            <span class="badge bg-success mb-3">Community</span>
+            <h3 class="h4 mb-3">Campus Cleanup Day</h3>
+            <p class="mb-4">Join us for our monthly community cleanup event. Work alongside our robots and help create a
+              cleaner, greener campus environment.</p>
+            <a href="#" class="btn btn-outline-light">Join Event</a>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- footer -->
-  <div class="container">
-    <!-- disclaimer -->
-    <div class="container border-top">
-      <div class="row justify-content-center my-3">
-        DISCLAIMER: This is a fictional company and product. No services are
-        real. This website was made for a university capstone course.
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center mb-5">
+          <h2 class="display-4 mb-3">Get In Touch</h2>
+          <p class="lead text-muted">Have questions about our smart waste management solutions? We'd love to hear from
+            you!</p>
+        </div>
+      </div>
+
+      <div class="row g-4 justify-content-center mb-5">
+        <div class="col-md-4 text-center">
+          <div class="contact-icon-wrapper mx-auto mb-3">
+            <i class="bi bi-geo-alt text-success"></i>
+          </div>
+          <h5 class="mb-2">Location</h5>
+          <p class="mb-0 text-muted">San Marcos, TX 78666</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <div class="contact-icon-wrapper mx-auto mb-3">
+            <i class="bi bi-envelope text-success"></i>
+          </div>
+          <h5 class="mb-2">Email</h5>
+          <p class="mb-0 text-muted">contact@envirorover.com</p>
+        </div>
+
+        <div class="col-md-4 text-center">
+          <div class="contact-icon-wrapper mx-auto mb-3">
+            <i class="bi bi-telephone text-success"></i>
+          </div>
+          <h5 class="mb-2">Phone</h5>
+          <p class="mb-0 text-muted">+1 (555) 123-4567</p>
+        </div>
+      </div>
+
+      <div class="row g-5 align-items-stretch">
+        <div class="col-lg-6">
+          <div class="contact-info h-100">
+            <div class="contact-image-wrapper">
+              <img src="assets/earth-heart.png" alt="Contact Illustration" class="img-fluid rounded-4 shadow-sm">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="contact-form-wrapper">
+            <form class="contact-form p-4 rounded-4">
+              <div class="row g-4">
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required autocomplete="name">
+                    <label for="name">Your Name</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required autocomplete="email">
+                    <label for="email">Email Address</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <select class="form-select" id="subject" required>
+                      <option value="" selected disabled>Select a topic</option>
+                      <option value="product">Product Information</option>
+                      <option value="partnership">Partnership Opportunities</option>
+                      <option value="support">Technical Support</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <label for="subject">Subject</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating">
+                    <textarea class="form-control" id="message" style="height: 150px" placeholder="Your message"
+                      required></textarea>
+                    <label for="message">Your Message</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-success btn-lg w-100" type="submit">
+                    <i class="bi bi-send me-2"></i>Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-    <footer class="d-flex flex-wrap justify-content-between align-items-center my-3">
-      <p class="col-md-4 mb-0 text-body-secondary nav-textlogo">
-        © 2023 EnviroRover
-      </p>
-      <ul class="nav col-md-6 justify-content-end">
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="#features" class="nav-link px-2 text-body-secondary">Features</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link px-2 text-body-secondary">About</a>
-        </li>
-      </ul>
-    </footer>
-  </div>
+  </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-    crossorigin="anonymous"></script>
+  <!-- Footer -->
+  <footer class="bg-light py-5 mt-6">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <h5 class="text-success mb-4">EnviroRover</h5>
+          <p class="text-muted">Revolutionizing campus waste management through intelligent robotics and sustainable
+            solutions.</p>
+          <div class="social-icons d-flex gap-3 mt-4">
+            <a href="#" class="text-muted fs-5"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="text-muted fs-5"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="text-muted fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-muted fs-5"><i class="bi bi-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="mb-4">Quick Links</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#hero" class="text-muted text-decoration-none">Home</a></li>
+            <li class="mb-2"><a href="#features" class="text-muted text-decoration-none">Features</a></li>
+            <li class="mb-2"><a href="#models" class="text-muted text-decoration-none">Models</a></li>
+            <li class="mb-2"><a href="#faqs" class="text-muted text-decoration-none">FAQs</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-lg-2">
+          <h6 class="mb-4">Resources</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Documentation</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Blog</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Support</a></li>
+            <li class="mb-2"><a href="#" class="text-muted text-decoration-none">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4">
+          <h6 class="mb-4">Newsletter</h6>
+          <p class="text-muted mb-4">Stay updated with our latest news and updates</p>
+          <div class="input-group mb-3">
+            <input type="email" id="footer-email" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+            <button class="btn btn-success" type="button">Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <hr class="my-5">
+
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <p class="mb-3 mb-md-0 text-muted">© 2025 EnviroRover. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end">
+          <p class="text-muted mb-0">
+            <small>DISCLAIMER: This is a fictional company created for educational purposes.</small>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
