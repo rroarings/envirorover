@@ -47,11 +47,8 @@
     </div>
   </nav>
 
-  
-  
-
   <!-- Hero Section -->
-  <section id="hero" class="mb-5">
+  <section id="hero" class="landing-hero mb-5">
     <div class="container h-100 d-flex align-items-center">
       <div class="row justify-content-center text-center">
         <div class="col-lg-8">
@@ -129,7 +126,7 @@
   <div id="waste" class="container py-5">
     <div class="row mb-4">
       <div class="col-12 col-lg my-auto">
-        <h2 class="display-4 mb-4">The Waste Problem</h2>
+        <h2 class="display-4 fw-bold mb-4">The Waste Problem</h2>
         <p class="">
           Traditional waste management systems fall short in efficiency and
           environmental impact. Overflowing bins, inefficient sorting, and
@@ -149,7 +146,7 @@
   <div class="container py-5">
     <div class="row flex-row-reverse mb-4">
       <div class="col-12 col-lg my-auto">
-        <h2 class="display-4 mb-4">Our Solutions</h2>
+        <h2 class="display-4 fw-bold mb-4">Our Solutions</h2>
         <p class="">
           EnviroRover introduces a range of innovative solutions designed to
           revolutionize waste management. From advanced robotics to
@@ -169,8 +166,8 @@
   <section id="features" class="container py-5">
     <div class="row align-items-center mb-5">
       <div class="col-lg-6">
-        <h2 class="display-4 mb-4">Smart Campus Solutions</h2>
-        <p class="lead mb-4">Experience next-generation waste management with our innovative mobile app and intelligent
+        <h2 class="display-4 fw-bold mb-4">Smart Campus Solutions</h2>
+        <p class="mb-4">Experience next-generation waste management with our innovative mobile app and intelligent
           robots.</p>
         <a href="#contact" class="btn btn-success">Get Started</a>
       </div>
@@ -238,7 +235,7 @@
   <!-- Project Section -->
   <section id="project" class="container py-5">
     <div class="text-center mb-5">
-      <h2 class="display-4 mb-3">Explore Our Project</h2>
+      <h2 class="display-4 fw-bold mb-3">Explore Our Project</h2>
       <p class="lead text-muted">Discover the different aspects of our innovative approach</p>
     </div>
 
@@ -292,7 +289,7 @@
   <!-- Models Section -->
   <section id="models" class="container py-5 ">
     <div class="text-center mb-5">
-      <h2 class="display-4 mb-3">Meet Our Rovers</h2>
+      <h2 class="display-4 fw-bold mb-3">Meet Our Rovers</h2>
       <p class="lead text-muted">Discover our fleet of intelligent waste management robots</p>
     </div>
 
@@ -407,108 +404,95 @@
     </div>
   </section>
 
-  <!-- faqs -->
-  <div id="faqs" class="container py-5">
-    <div class="">
-      <h2 class="text-center display-4">Frequently Asked Questions</h2>
-      <div class="accordion mt-4" id="accordionExample">
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              What does your company do?
-            </button>
-          </h2>
-          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              We specialize in advanced waste management solutions, providing
-              innovative robotics and technology to enhance eco-friendly
-              practices on campuses.
-            </div>
+  <!-- FAQs Section -->
+  <section id="faqs" class="container py-5">
+    <h2 class="text-center display-4 fw-bold mb-5">Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingCompany">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqCompany" aria-expanded="true" aria-controls="faqCompany">
+            What does your company do?
+          </button>
+        </h2>
+        <div id="faqCompany" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion" aria-labelledby="headingCompany">
+          <div class="accordion-body">
+            We specialize in advanced waste management solutions, providing innovative robotics and technology to enhance eco-friendly practices on campuses.
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              How can I contact your customer support?
-            </button>
-          </h2>
-          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              For any assistance, you can reach our dedicated customer support
-              team at support@envirorover.com or call us at +1 (555) 123-4567.
-            </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingSupport">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqSupport" aria-expanded="false" aria-controls="faqSupport">
+            How can I contact your customer support?
+          </button>
+        </h2>
+        <div id="faqSupport" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" aria-labelledby="headingSupport">
+          <div class="accordion-body">
+            For any assistance, you can reach our dedicated customer support team at support@envirorover.com or call us at +1 (555) 123-4567.
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              Is there a warranty on your products?
-            </button>
-          </h2>
-          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Absolutely! All our products come with a 2-year warranty. Check
-              our warranty policy for detailed terms and conditions.
-            </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingWarranty">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqWarranty" aria-expanded="false" aria-controls="faqWarranty">
+            Is there a warranty on your products?
+          </button>
+        </h2>
+        <div id="faqWarranty" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" aria-labelledby="headingWarranty">
+          <div class="accordion-body">
+            Absolutely! All our products come with a 2-year warranty. Check our warranty policy for detailed terms and conditions.
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-              Are your products eco-friendly?
-            </button>
-          </h2>
-          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Yes, sustainability is at our core. Our products are crafted
-              using recycled materials and promote environmentally friendly
-              waste management practices.
-            </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingEco">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqEco" aria-expanded="false" aria-controls="faqEco">
+            Are your products eco-friendly?
+          </button>
+        </h2>
+        <div id="faqEco" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" aria-labelledby="headingEco">
+          <div class="accordion-body">
+            Yes, sustainability is at our core. Our products are crafted using recycled materials and promote environmentally friendly waste management practices.
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-              Are your products suitable for different waste types?
-            </button>
-          </h2>
-          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Our waste management solutions cater to various waste types,
-              including trash and recyclables. Feel free to inquire about
-              specific product suitability for your waste management needs.
-            </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingWaste">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqWaste" aria-expanded="false" aria-controls="faqWaste">
+            Are your products suitable for different waste types?
+          </button>
+        </h2>
+        <div id="faqWaste" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" aria-labelledby="headingWaste">
+          <div class="accordion-body">
+            Our waste management solutions cater to various waste types, including trash and recyclables. Feel free to inquire about specific product suitability for your waste management needs.
           </div>
         </div>
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-              How do I stay updated on your latest products and promotions?
-            </button>
-          </h2>
-          <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
-              Stay in the loop by subscribing to our newsletter on the
-              homepage. Receive updates on new products, promotions, and
-              sustainable waste management tips.
-            </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingUpdates">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqUpdates" aria-expanded="false" aria-controls="faqUpdates">
+            How do I stay updated on your latest products and promotions?
+          </button>
+        </h2>
+        <div id="faqUpdates" class="accordion-collapse collapse" data-bs-parent="#faqAccordion" aria-labelledby="headingUpdates">
+          <div class="accordion-body">
+            Stay in the loop by subscribing to our newsletter on the homepage. Receive updates on new products, promotions, and sustainable waste management tips.
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- News & Updates Section -->
   <section class="spotlight-section text-white py-5">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="display-4 mb-3 text-white">Latest Updates</h2>
+        <h2 class="display-4 fw-bold mb-3 text-white">Latest Updates</h2>
         <p class="lead text-light">Stay informed about our latest achievements and initiatives</p>
       </div>
 
@@ -551,7 +535,7 @@
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8 text-center mb-5">
-          <h2 class="display-4 mb-3">Get In Touch</h2>
+          <h2 class="display-4 fw-bold mb-3">Get In Touch</h2>
           <p class="lead text-muted">Have questions about our smart waste management solutions? We'd love to hear from
             you!</p>
         </div>
@@ -649,10 +633,10 @@
           <p class="text-muted">Revolutionizing campus waste management through intelligent robotics and sustainable
             solutions.</p>
           <div class="social-icons d-flex gap-3 mt-4">
-            <a href="#" class="text-muted fs-5"><i class="bi bi-linkedin"></i></a>
-            <a href="#" class="text-muted fs-5"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="text-muted fs-5"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-muted fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/nick-calvo-56b61218b/" class="text-muted fs-5"><i class="bi bi-linkedin"></i></a>
+            <a href="https://x.com/NickkThough" class="text-muted fs-5"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://github.com/rroarings" class="text-muted fs-5"><i class="bi bi-github"></i></a>
+            <a href="https://www.youtube.com/@0vlack" class="text-muted fs-5"><i class="bi bi-youtube"></i></a>
           </div>
         </div>
 
